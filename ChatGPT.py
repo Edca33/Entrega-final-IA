@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "tu api key"
+openai.api_key = ""
 
 class IAAlRescate:
     def __init__(self, api_key):
@@ -59,7 +59,7 @@ class IAAlRescate:
 
 # Ejemplo de uso
 if __name__ == "__main__":
-    api_key = "Tu api key"  # Reemplaza con tu clave API válida
+    api_key = "" 
     ia_rescate = IAAlRescate(api_key)
 
     # Ejemplo 1: Texto a texto
