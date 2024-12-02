@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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"
+openai.api_key = "tu api key"
 
 class IAAlRescate:
     def __init__(self, api_key):
@@ -59,7 +59,7 @@ class IAAlRescate:
 
 # Ejemplo de uso
 if __name__ == "__main__":
-    api_key = "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"  # Reemplaza con tu clave API válida
+    api_key = "Tu api key"  # Reemplaza con tu clave API válida
     ia_rescate = IAAlRescate(api_key)
 
     # Ejemplo 1: Texto a texto
