@@ -1,4 +1,5 @@
 import openai
+
 openai.api_key = ""
 
 class IAAlRescate:
@@ -62,24 +63,19 @@ if __name__ == "__main__":
     api_key = "" 
     ia_rescate = IAAlRescate(api_key)
 
-    # Ejemplo 1: Texto a texto
     prompt_texto = "Diseña un horario detallado priorizando las tareas más importantes de mi día, teniendo en cuenta que trabajo 8 horas."
     respuesta_texto = ia_rescate.generar_respuesta_texto(prompt_texto)
     print("Respuesta de Texto a Texto:\n", respuesta_texto)
 
-    # Ejemplo 2: Texto a imagen
-    prompt_imagen = "Genera una imagen de un jardín zen al atardecer, con un estanque, piedras organizadas y bambú rodeándolo."
+    prompt_imagen = "Genera una imagen de un mapa conceptual que explique el proceso de generación de texto e imágenes usando IA, mostrando conexiones entre las siguientes ideas: 'Prompt', 'Modelo de IA', 'Resultados', Evaluación'. Usa un diseño limpio y organizado con flechas conectando los conceptos."
     respuesta_imagen = ia_rescate.generar_respuesta_imagen(prompt_imagen)
     print("URL de la Imagen Generada:\n", respuesta_imagen)
 
-    # Ejemplo 3: Evaluación de una respuesta
     evaluacion = ia_rescate.evaluar_respuesta(respuesta_texto)
     print("Evaluación de la Respuesta:\n", evaluacion)
 
-    # Ejemplo 4: Asistencia técnica para problemas de código
     problema = "Tengo un error de sintaxis en mi código Python cuando intento definir una función."
     respuesta_tecnica = ia_rescate.asistencia_tecnica_codigo(problema, "Python")
     print("Respuesta para Asistencia Técnica:", respuesta_tecnica)
-
 
 print(dir(IAAlRescate))
